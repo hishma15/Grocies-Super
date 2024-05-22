@@ -1,0 +1,169 @@
+:root{
+    --clr--blue : #1e2959;
+    --clr--green : #00bf63;
+    --clr--white : white;
+    --clr--light : #dae5f9;
+    --clr--dark : #303633;
+    --clr--black : #000000;
+    --clr--light-gray :#d8d8d8 ;
+    --clr--dark-gray : #848484 ;
+    --clr--gray : #bbbbbb ;
+    --clr--t-gray :#b6b8b787;
+    --clr--t-green : #a2efcabc;
+
+}
+
+/*VEGETABLE PAGE STYLING*/
+
+#veg-img{
+    width: 500px;
+    height: auto;
+}
+
+.vegetable_products{
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr)) ;
+    justify-items: center;
+    /*-------------------------------------------------------------------------------*/
+    gap: 40px;
+    margin: 25px;
+    
+}
+
+.provider-intro{
+    margin: 25px;
+}
+
+
+
+.provider-logo{
+    width: 300px;
+    margin-bottom: 30px;
+    
+}
+
+.veg-providers{
+    margin-top: 40px;
+
+}
+
+.veg-providers h2{
+    margin-left: 20px;
+
+}
+
+.provider{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,auto));
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: justify;
+    font-size: 16px;
+    
+}
+
+.details{
+    margin: 20px;
+    padding: 15px;
+    background-color: var(--clr--light-gray);
+    border-radius: 0 20px 20px 20px;
+    font-size: 15px;
+    /*Animation*/
+    box-shadow: 0 3px 3px var(--clr--dark);
+}
+
+.details a:link{
+    color: var(--clr--blue);
+
+}
+
+.details a:visited{
+    color: var(--clr--green);
+}
+/*--------------------------------------------------------------*/
+
+
+
+/*DAIRY PRODUCTS PAGE STYLING*/
+
+#dairy-img{
+    width: 500px;
+    height: auto;
+}
+
+.dairy-products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/*COSMETICS & SKIN CARE PRODUCTS PAGE STYLING*/
+
+.cosmetics_skincare-products{
+    border-style: hidden;
+    border-spacing: 45px;
+}
+
+.skin_care h2{
+    margin: 20px;
+}
+
+
+
+
+/*---------------Common for vegetables and diary product pages------------*/
+
+.product-description{
+    margin: 30px;
+    display: flex;
+    gap: 20px;
+    text-align: justify;
+ 
+
+}
+
+/*-----------Mobile Responsive-----------*/
+
+
+
+@media (max-width: 900px){
+
+    #veg-img{
+        width: 250px;
+        height: auto;
+    }
+
+    .product-description{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    #dairy-img{
+        width: 250px;
+        height: auto;
+    }
+
+    .cosmetics_skincare-products,
+    .cosmetics_skincare-products tr{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+
+   
+}
+
+
+
+
+

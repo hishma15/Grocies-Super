@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT US | Grocies Supermarket</title>
+
+    <!--css links-->
+    <link rel="stylesheet" href="./CSS/style1.css" type="text/css">
+    <link rel="stylesheet" href="./CSS/style2.css" type="text/css">
+
+    <!--Font styles from google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--Icons from fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--favicon links-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="Grocies Super">
+    <meta name="application-name" content="Grocies Super">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-TileImage" content="./mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+
+    <!--header part of the page.-->
+
+    <header>
+
+        <!--Logo, SearchBar, Location-->
+        <section class="header-1">
+
+            <!--Logo Image with home page link-->
+            <div id="logo_img">
+                <a href="./index.html">
+                <img src="./IMAGE/supermarket-logo.png" alt="Grocies Supermarket Logo" id="logo-image">
+                </a>
+            </div>
+
+            <section class="header-1-2">
+                
+                <!--Search bar-->
+                <form class="search-box">
+                    <input type="search" placeholder="Search for products..." name="search" id="search">
+                    <button type="submit" name="search-button" id="search-button"> <span> Search </span> <i class="fa-solid fa-magnifying-glass"></i></button>                    
+                </form>
+
+                <!--Location selecting option-->
+                <div class="select_location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <select class="location">
+                        <option value="" id="search_locaion">Select your location</option>
+                        <option value="colombo">Colombo</option>
+                        <option value="kandy">Kandy</option>
+                        <option value="kurunagala">Kurunagala</option>
+                    </select>
+                </div>
+
+            </section>
+
+        </section>
+
+        <!--Navbar,menu-->
+        <section class="header-2">
+            
+                <!--Menu bar-->
+                <input type="checkbox" id="menu-bar">
+                <label for="menu-bar" class="menu">
+                    <i class="fa-solid fa-bars" id="menu-icon"></i>
+                </label>
+
+                <br>
+
+            <!--Navigation bar-->
+            <nav class="navbar">
+
+                <ul class="navigation">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./aboutus.html" class="active">ABOUT US</a></li>
+                    <li class="dropdown">
+
+                        <a href="./products.html">PRODUCTS</a>
+                        <!--Products options as dropdown-->
+                        <ul class="dropdown_products">
+                            <li><a href="./vegetable.html">Vegetables</a></li>
+                            <li><a href="./dairy-products.html">Dairy Products</a></li>
+                            <li><a href="./skincare-products.html">cosmetics & Skincare Products</a></li>
+                            <li><a href="#">Fruits</a></li>
+                            <li><a href="#">Meat & Seafood</a></li>
+                            <li><a href="#">Baking & cooking Ingrediants</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="dropdown">
+                        <a href="./register.html">REGISTER/LOGIN</a>
+                        <!--Sign in option as dropdown-->
+                        <form class="dropdown_login">
+
+                            <div class="head"> 
+                                <span>Don't have an Account ? <a href="./register.html" id="sign_up">Sign Up</a> </span>
+                                <h1>Login</h1>
+                            </div>
+
+                            <div class="input-box">
+                                <input type="text" class="input-field" placeholder="Username or Email">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+
+                            <div class="input-box">
+                                <input type="password" class="input-field" placeholder="Password">
+                                <i class="fa-solid fa-lock"></i>
+                            </div>
+            
+                            <div class="input-box">
+                                <input type="submit" class="submit" value="Sign In">
+                            </div>
+
+                            <div class="foot">
+                
+                                <div class="one">
+                                    <input type="checkbox" id="login-check">
+                                    <label for="login-check">Remember Me</label>
+                                </div>
+            
+                                <div class="two">
+                                    <label> |Forgot password ?</label>
+                                </div>
+            
+                            </div>
+
+                        </form>
+                    </li>
+                    <li><a href="./order.html">ORDER</a></li>
+                </ul>
+        
+            </nav>
+
+        </section>
+
+    </header>
+
+    <!----------------------------Main part of the page------------------------------->
+    
+    <main>
+
+        <h1>About Us</h1>
+
+        <!--About the supermarket-->
+        <section class="about_supermarket">
+            
+            <div class="supermarket_summery">
+                <h2>Welcome to GROCIES SUPERMARKET..</h2>
+                <!--The paragraph is copied from the https://www.carrefourqatar.com/mafqat/en/ website.-->
+                <p>At Grocies Supermarket we are provide wide range of products that cater to your needs , available all our supermarket store chains across Sri Lanka.</p>
+                
+                <p>Convenient and Easy online experience . You can avoid the rush-hour traffic to the Supermarket with Grocies Supermarket Online Shopping through our website. Explore our vast selection of grocery products and get exclusive discounts and online offers.</p>
+
+    
+                <p>Services provided By Grocies Supermarket are :</p>
+                <ul>
+                    <li>Delivery</li>
+                    <li>Catering</li>
+                    <li>Party Planning</li>
+                </ul>
+
+            </div>
+            <figure class="supermarket_image">
+                <picture>
+                    <!--Image got from https://www.pexels.com/-->
+                    <!--<source srcset="./IMAGE/grocies_image2.jpg" media="(max-width: 1200px)">-->
+                    <source srcset="./IMAGE/grocies_image2-small.jpg" media="(max-width: 750px)">
+                    <img src="./IMAGE/grocies_image2.jpg" alt="picture of the grocies supermarket" id="grocies-img2">
+
+                </picture>
+                <!--<img src="./IMAGE/grocies_image2.jpg" alt="picture of the grocies supermarket" id="grocies-img2">-->
+            </figure>
+
+        </section>
+
+        <!--Summary table about services offored by the supermarket-->
+        <section class="sum-table">
+            <table class="summary-table">
+                <caption><strong>Services offered by the Grocies Supermarket</strong></caption>
+                <thead>
+                    <th>Services</th>
+                    <th>Description</th>
+                    <th>Availability</th>
+                    <th>Customer Review(Out of 5)</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-title="Sevices">Delivery</td>
+                        <td data-title="Description">Groceries delivered to your door-step</td>
+                        <td data-title="Availability">24/7</td>
+                        <td data-title="Customer Review (Out of 5)">4.7</td>
+                    </tr>
+                    <tr>
+                        <td data-title="Sevices">Catering</td>
+                        <td data-title="Description">Food orders for large number of people</td>
+                        <td data-title="Availability">Pre order required</td>
+                        <td data-title="Customer Review (Out of 5)">4.9</td>
+                    </tr>
+                    <tr>
+                        <td data-title="Sevices">Party Planning</td>
+                        <td data-title="Description">Party plans done by us</td>
+                        <td data-title="Availability">Pre booking required</td>
+                        <td data-title="Customer Review (Out of 5)">4.5</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">For inquiries about our services, Please Contact Us.</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </section>
+
+        <!--About our branches-->
+        <section class="supermarket_branches">
+            
+            <h2>Our branches</h2>
+
+            <!--Branch01-->
+            <section class="branch_1">
+                <h3>COLOMBO 03 BRANCH</h3>
+
+                <div class="branch">
+                    <figure>
+                        <picture>
+                            <!--Image got from https://www.freepik.com/-->
+                            <!--<source srcset="./IMAGE/location_1.jpg" media="(max-width: 1200px)">-->
+                            <source srcset="./IMAGE/location_1-small.jpg" media="(max-width: 750px)">
+                            <img src="./IMAGE/location_1.jpg" alt="Colombo 03 Branch" class="branch-img">
+                        </picture>
+                        <!--<img src="./IMAGE/location_1.jpg" alt="Colombo 02 Branch" class="branch-img">-->
+                        <figcaption>COLOMBO 03 BRANCH</figcaption>
+                    </figure>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.756438904931!2d79.85145112395944!3d6.919694218434619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2591532540f4b%3A0xf0aa2df4274d0b31!2sColombo%2000200!5e0!3m2!1sen!2slk!4v1715183996820!5m2!1sen!2slk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                    <!--https://www.safarihypermarket.com/about-us/-->
+                    <p>Established in 2002, Grocies initially ventured into the commercial arena as a trader of groceries. In 2008, our first retail venture Grocies Supermarket began operations at High level road, Colombo 03. Ever since its inception, the group has been on an uphill graph in terms of ventures, scale of operations, workforce and customers. Today, as one of the giants in the commercial sector Sri Lanka, Grocies can boast of its unbeatable pricing scales, expanding customer base and indomitable trading practices.</p>
+                    
+                <div class="branch-details">
+                    <p>Contact Number : +94-11-444-5566</p>
+                    <p>E-mail : grociessupercolombo03@gmail.com</p>
+                    <p>Address : 398, High level road, Colombo 2.</p>
+                </div>
+
+            </section>
+
+            <!--Branch02-->
+            <section class="branch_2">
+                <h3>KANDY BRANCH</h3>
+
+                <div class="branch">
+                    <figure>
+                        <picture>
+                            <!--Image got from https://www.freepik.com/-->
+                            <source srcset="./IMAGE/location_2-small.jpg" media="(max-width: 750px)">
+                            <img src="./IMAGE/location_2.jpg" alt="Kandy Branch" class="branch-img">
+                        </picture>
+                        <!--<img src="./IMAGE/location_2.jpg" alt="Kandy Branch" class="branch-img">-->
+                        <figcaption>KANDY BRANCH</figcaption>
+                    </figure>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4235.925323179847!2d80.61555276840795!3d7.281088885378762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae368824457ef91%3A0x4f527eac6e11e61c!2sPeradeniya%20Rd%2C%20Kandy!5e0!3m2!1sen!2slk!4v1715184471753!5m2!1sen!2slk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                    <p></p>
+
+                <div class="branch-details">
+                    <p>Contact Number : +94-81-444-5566</p>
+                    <p>E-mail : grociessuperkandy@gmail.com</p>
+                    <p>Address : 398, Peradeniya road, Kandy.</p>
+                </div>
+
+            </section>
+
+            <!--Branch03-->
+            <section class="branch_3">
+                <h3>KURUNAGALA BRANCH</h3>
+
+                <div class="branch">
+                    <figure>
+                        <picture>
+                            <!--Image got from https://www.freepik.com/-->
+                            <source srcset="./IMAGE/location_3-small.jpg" media="(max-width:750px)">
+                            <img src="./IMAGE/location_3.jpg" alt="Kurunagala Branch" class="branch-img">
+                        </picture>
+                        <!--<img src="./IMAGE/location_3.jpg" alt="Kurunagala Branch" class="branch-img">-->
+                        <figcaption>KURUNAGALA BRANCH</figcaption>
+                    </figure>    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15828.851729324271!2d80.00093500830285!3d7.329966006821776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2ddf7893b2d31%3A0xe7b9752a3d3ec844!2sNegombo-Kurunegala%20Rd!5e0!3m2!1sen!2slk!4v1715184576544!5m2!1sen!2slk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                    <p></p>
+
+                <div class="branch-details">
+                    <p>Contact Number : +94-37-444-5566</p>
+                    <p>E-mail : grociessuperkurunagla@gmail.com</p>
+                    <p>Address : 398, Negambo street, Kurunagala.</p>
+                </div>
+
+            </section>
+
+        </section>
+
+
+    </main>
+    
+
+
+    <!--Footer part of the page-->
+
+    <footer>
+
+        <!--Back to top-->
+        <section class="back_to_top">
+            <a href="#"> BACK TO TOP</a>
+        </section>
+
+        <section class="footer">
+
+            <!--E-mail us-->
+            <section class="footer-1">
+
+                <h3>Subscribe us for latest updates </h3>
+
+                <form>
+                    <input type="email" id="subscribe_email" placeholder="Enter your e-mail....">
+                    <input type="submit" placeholder="Subscribe" class="button-subscribe">
+                </form>
+
+
+            </section>
+
+            <hr>
+
+            <section class="footer-2">
+            
+                <!--Social media Icons-->
+                <section class="social_media">
+                    <p>Stay in touch with us</p>
+
+                    <div class="scoial-media-icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+
+                </section>
+
+                <section class="footer_content">
+                    <h3>Categories</h3>
+                    <a href="./vegetable.html">vegetables</a>
+                    <a href="./dairy-products.html">Dairy Products</a>
+                    <a href="./skincare-products.html">Cosmetics & Skincare</a>
+                    <a href="#">Fruits</a>
+                    <a href="#">Meat & Seafood</a>
+                    <a href="#">Baking & cooking Ingrediants</a>
+                </section>
+
+                <section class="footer_content">
+                    <h3>Our Locations</h3>
+                    <a href="#">Colombo 03</a>
+                    <a href="#">Kandy</a>
+                    <a href="#">Kurunagala</a>
+                </section>
+
+                <section class="contact_us">
+                    <h3>Contact Us</h3>
+                    <p>Phone Number : 081-111-1111</p>
+                    <p>E-mail : grociessupermarket@gmail.com</p>
+                </section>
+
+            </section>
+
+        </section>
+
+        <section class="footer-3">
+            <p>&copy; copyright 2024 Grocies Supermarket Services (Pvt) Ltd. All rights Reserved. </p>
+            <p id="designer">Designed by: Hishma Hameed</p>
+        </section>
+
+    </footer>
+    
+</body>
+</html>

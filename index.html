@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME | Grocies Supermarket</title>
+
+    <!--css links-->
+    <link rel="stylesheet" href="./CSS/style1.css" type="text/css">
+    <link rel="stylesheet" href="./CSS/style2.css" type="text/css">
+
+    <!--Font styles from google fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    
+    <!--Icons from font awsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <!--Favicon links-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="Grocies Super">
+    <meta name="application-name" content="Grocies Super">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-TileImage" content="./mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+
+    <!---------------------------Header part of the page.------------------------------->
+
+    <header>
+
+        <!--Logo, SearchBar, Location-->
+        <section class="header-1">
+
+            <!--Logo Image with home page link-->
+            <div id="logo_img">
+                <a href="./index.html">
+                <img src="./IMAGE/supermarket-logo.png" alt="Grocies Supermarket Logo" id="logo-image">
+                </a>
+            </div>
+
+            <section class="header-1-2">
+
+                <!--Search bar-->
+                <form class="search-box">
+                    <input type="search" placeholder="Search for products..." name="search" id="search">
+                    <button type="submit" name="search-button" id="search-button"><span> Search </span><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                
+                <!--Location selecting option-->
+                <div class="select_location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <select class="location">
+                        <option value="" id="search_locaion">Select your location</option>
+                        <option value="colombo">Colombo</option>
+                        <option value="kandy">Kandy</option>
+                        <option value="kurunagala">Kurunagala</option>
+                    </select>
+                </div>
+
+            </section>
+
+        </section>
+
+        <!--Navbar,menu-->
+        <section class="header-2">
+
+                <!--Menu bar-->
+                <input type="checkbox" id="menu-bar">
+                <label for="menu-bar" class="menu">
+                    <i class="fa-solid fa-bars" id="menu-icon"></i>
+                </label>
+
+                <br>
+
+            <!--Navigation bar-->
+            <nav class="navbar">
+
+                <ul class="navigation">
+                    <li><a href="./index.html" class="active">HOME</a></li>
+                    <li><a href="./aboutus.html">ABOUT US</a></li>
+                    <!--Products options as dropdown-->
+                    <li class="dropdown">
+
+                        <a href="./products.html">PRODUCTS</a>
+                        <ul class="dropdown_products">
+                            <li><a href="./vegetable.html">Vegetables</a></li>
+                            <li><a href="./dairy-products.html">Dairy Products</a></li>
+                            <li><a href="./skincare-products.html">cosmetics & Skincare Products</a></li>
+                            <li><a href="#">Fruits</a></li>
+                            <li><a href="#">Meat & Seafood</a></li>
+                            <li><a href="#">Baking & cooking Ingrediants</a></li>
+                        </ul>
+
+                    </li>
+                    <!--Sign in option as dropdown-->
+                    <li class="dropdown">
+                        <a href="./register.html">REGISTER/LOGIN</a>
+                        <form class="dropdown_login">
+
+                            <div class="head"> 
+                                <span>Don't have an Account ? <a href="./register.html" id="sign_up">Sign Up</a> </span>
+                                <h1>Login</h1>
+                            </div>
+
+                            <div class="input-box">
+                                <input type="text" class="input-field" placeholder="Username or Email">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+
+                            <div class="input-box">
+                                <input type="password" class="input-field" placeholder="Password">
+                                <i class="fa-solid fa-lock"></i>
+                            </div>
+            
+                            <div class="input-box">
+                                <input type="submit" class="submit" value="Sign In">
+                            </div>
+
+                            <div class="foot">
+                
+                                <div class="one">
+                                    <input type="checkbox" id="login-check">
+                                    <label for="login-check">Remember Me</label>
+                                </div>
+            
+                                <div class="two">
+                                    <label> |Forgot password ?</label>
+                                </div>
+            
+                            </div>
+
+                        </form>
+                    </li>
+                    <li><a href="./order.html">ORDER</a></li>
+                </ul>
+        
+            </nav>
+
+        </section>
+
+    </header>
+
+    <!-------------------------------------Main part of the page----------------------------------->
+
+    <main>
+
+        <!--Main image-->
+        <section class="main_image">
+            <!--Banner image made in https://www.canva.com/-->
+            <img src="./IMAGE/banner.jpg" alt="main-image" id="main-image">
+        </section>
+
+        <!--About our sevices in a ordered list -->
+        <section class="service_list">
+
+            <ul class="service-list">
+
+                <div id="24_hour">
+                    <i class="fa-solid fa-clock"></i>
+                    <li>24 Hours Services</li>
+                </div>
+
+                <div id="door_delivery">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <li>Door step Delivery</li>
+                </div>
+
+                <div id="high_quality">
+                    <i class="fa-solid fa-award"></i>
+                    <li>High-quality products</li>
+                </div>
+
+                <div id="fresh_organic">
+                    <i class="fa-solid fa-check"></i>
+                    <li>Fresh & Organic</li>
+                </div>
+
+                <div id="affordable_price">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    <li>Affordable price</li>
+                </div>
+
+            </ul>
+
+        </section>
+
+        <!--Our Product Catagories-->
+        <section class="products">
+            <h1>Categories</h1>
+            <section class="categories">
+
+                <div class="vegetable">
+                    <!--Image got from https://www.freepik.com/-->
+                    <a href="./vegetable.html"><img src="./IMAGE/vegetables-img.jpg" alt="vegetables"></a>
+                    <span>VEGETABLES</span>
+                </div>
+                <div class="dairy_products">
+                    <!--Image got from https://www.freepik.com/-->
+                    <a href="./dairy-products.html"><img src="./IMAGE/dairy-products.jpg" alt="dairy products"></a>
+                    <span>DAIRY PRODUCTS</span>
+                </div>
+                <div class="skincare_products">
+                    <!--Image got from https://www.freepik.com/-->
+                    <a href="./skincare-products.html"><img src="./IMAGE/skin-care-products.jpg"></a>
+                    <span>COSMETICS AND SKIN CARE PRODUCTS</span>
+                </div>
+                <div class="see-more">
+                    <a href="./products.html" class="more">VIEW ALL<i class="fa-solid fa-angle-right"></i></a>
+                </div>
+
+            </section> 
+        </section>
+
+        <!--Special offer products-->
+        <section class="special_off">
+            <h1>Special Offers</h1>
+
+            <section class="special-offer">
+
+                <section class="special-offer-products">
+
+                    <!--Product01-->
+                    <div class="box">
+
+                        <div class="off_like-icon">
+                            <i class="fa-regular fa-heart"></i>
+                            <p>10% off</p>
+                        </div>
+
+                        <img src="./IMAGE/carrot.jpg" alt="Carrot">
+                        <h3>Fresh Carrots</h3>
+                        <span>1Kg</span>
+                        <div class="price">Rs.279.00<del>Rs.310.00</del></div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                        <br>
+                        <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Buy now</a>
+
+                    </div>
+
+                    <!--Product02-->
+                    <div class="box">
+
+                        <div class="off_like-icon">
+                            <i class="fa-regular fa-heart"></i>
+                            <p>15% off</p>
+                        </div>
+
+                        <img src="./IMAGE/onion.jpg" alt="Onion">
+                        <h3>Fresh Onion</h3>
+                        <span>1Kg</span>
+                        <div class="price">Rs.637.50<del>Rs.750.00</del></div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+
+                            
+                        </div>
+                        <br>
+                        <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
+
+                    </div>
+
+                    <!--Product03-->
+                    <div class="box">
+
+                        <div class="off_like-icon">
+                            <i class="fa-regular fa-heart"></i>
+                            <p>10% off</p>
+                        </div>
+
+                        <img src="./IMAGE/curd.jpg" alt="Curd">
+                        <h3>Curd</h3>
+                        <span>450g</span>
+                        <div class="price">Rs.342.00<del>Rs.380.00</del></div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                        </div>
+                        <br>
+                        <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
+
+                    </div>
+
+                    <!--Product04-->
+                    <div class="box">
+
+                        <div class="off_like-icon">
+                            <i class="fa-regular fa-heart"></i>
+                            <p>10% off</p>
+                        </div>
+
+                        <img src="./IMAGE/icecream.jpg" alt="Ice-Cream">
+                        <h3>Ice-Cream</h3>
+                        <span>480 ml</span>
+                        <div class="price">Rs.4491.00<del>Rs.4990.00</del></div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+
+                        </div>
+                        <br>
+                        <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
+
+                    </div>
+
+                    <div class="see-more">
+                        <a href="./products.html" class="more">SEE MORE <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+
+                </section>
+                
+            </section>
+
+        </section>
+
+        <!--Register or Login-->
+        <section class="q_register">
+
+            <h1>BUY MORE SAVE MORE</h1>
+            <section class="buy-save-off">
+                <section class="off-price">
+                    <div class="off-range">
+                        <h3>Rs.1500 off</h3>
+                        <p>On your order of Rs.5000 & Rs.7499*</p>
+                    </div>
+                    <div class="off-code">
+                        <p>Use Code</p>
+                        <span>BUY1500</span>
+                    </div>
+                </section>
+
+                <section class="off-price">
+                    <div class="off-range">
+                        <h3>Rs.2500 off</h3>
+                        <p>On your order of Rs.7500 & Rs.10499*</p>
+                    </div>
+                    <div class="off-code">
+                        <p>Use Code</p>
+                        <span>BUY2500</span>
+                    </div>
+                </section>
+
+                <section class="off-price">
+                    <div class="off-range">
+                        <h3>Rs.3500 off</h3>
+                        <p>On your order of Rs.10500*</p>
+                    </div>
+                    <div class="off-code">
+                        <p>Use Code</p>
+                        <span>BUY3500</span>
+                    </div>
+                </section>
+            </section>
+
+            <section class="register-off">
+                <h2>Don't Have an Account ?</h2>
+                <p>Get 40% on your first order!!</p>
+                <a href="./register.html">REGISTER NOW</a>
+            </section>
+            
+        </section>
+
+        <!--About the supermarket-->
+        <section class="about_supermarket">
+            
+            <div class="supermarket_summery">
+                <h2>Welcome to GROCIES SUPERMARKET..</h2>
+
+                <!--The paragraph is copied from the https://www.carrefourqatar.com/mafqat/en/ website.-->
+                <p>At Grocies Supermarket we are provide wide range of products that cater to your needs , available all our supermarket store chains across Sri Lanka.</p>
+
+
+                <!--Bullet List-->
+                <p>whether you're looking for,</p>
+                <ul>
+                    <li>Convenient Products</li>
+                    <li>High Quality Products</li>
+                    <li>Imported Goods</li>
+                    <li>Certified Organic</li>
+                    <li>100% natural</li>
+                    <li>Ethically-produced items</li>
+                </ul>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Grocies supermarket has something for you all. Elevate your grocery shopping experience with us today.</p>
+                
+                <a href="aboutus.html" class="more">READ MORE <i class="fa-solid fa-angle-right"></i></a>
+
+
+            </div>
+            
+            <figure class="supermarket_image">
+                <picture>
+                    <!--<source srcset="./IMAGE/grocies_image.jpg" media="(max-width: 1200px)">-->
+                    <!--Image got from https://www.pexels.com/-->
+                    <source srcset="./IMAGE/grocies_image-small.jpg" media="(max-width: 750px)">
+                    <img src="./IMAGE/grocies_image.jpg" alt="Picture of the grocies supermarket" id="grocies-img">
+                </picture>
+                <!--<img src="./IMAGE/grocies_image.jpg" alt="picture of the grocies supermarket" id="grocies-img">-->
+                <figcaption>GROCIES SUPERMARKET</figcaption>
+            </figure>
+
+        </section>
+
+        <!--Numbered List-->
+        <div class="promises">
+            <h2>Our promises </h2>
+            <ol>
+                <li>We do deliver your needs to your doorstep.</li>
+                <li>We do sell high-quality products.</li>
+                <li>We do sell Fresh and Organic vegetables, fruits and etc.</li>
+                <li>You can buy anything for affordable price.</li>
+                <li>We do serve 24/7 for our customers.</li>
+            </ol>
+        </div>
+
+        <section class="customer_review">
+
+            <h2>What Our Beloved Customers</h2>
+            <h2>Say About Us!</h2>
+
+            <i class="fa-solid fa-quote-left"></i>
+
+            <section class="customer-review">
+
+                <!--Profile photos took from https://www.freepik.com/search?ai=excluded&format=search&last_filter=query&last_value=profile+photo&query=profile+photo&type=photo-->
+                <section class="review">
+                    <div class="reviewer-name">
+                        <img src="./IMAGE/person-1.jpg" alt="Person 1 image">
+                        <strong>Olivia Lily</strong>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <div class="review-text">
+                        <p>Grocies offers a convenient and pleasant shopping experience. The store layout is well-organized, making it easy to find what you need quickly. The variety of products available is impressive, with high-quality options across all departments. The staff is friendly and helpful, enhancing the overall shopping experience. Whether you're picking up groceries or shopping for household items, Grocies Supermarket is a great choice for quality and convenience.</p>
+                    </div>
+
+                </section>
+
+                <section class="review">
+                    <div class="reviewer-name">
+                        <img src="./IMAGE/person-2.jpg" alt="Person 2 image">
+                        <strong>William Jack</strong>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+
+                    <div class="review-text">
+                        <p>This is Grocies Supermarket, prices are reasonable but some items are expensive, service is great, all items are well presented. There are a lot of sections, food, frozen, fruit, vegetables, meat, poultry, groceries....</p>
+                    </div>
+
+                </section>
+
+                <section class="review">
+                    <div class="reviewer-name">
+                        <img src="./IMAGE/person-3.jpg" alt="Person 3 image">
+                        <strong>Amelia Lucy</strong>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+
+                    <div class="review-text">
+                        <p>Grocies Supermarket located at Colombo 3 is one of the best supermarket in Sri Lanka. It contains wide range of products at an affordable price. The staff's are friendly and very helpful in assisting customers. I would recommend this place to all.</p>
+                    </div>
+                    
+                </section>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <!--footer part of the page-->
+
+    <footer>
+
+        <!--Back to top-->
+        <section class="back_to_top">
+            <a href="#"> BACK TO TOP</a>
+        </section>
+
+        <section class="footer">
+
+            <!--E-mail us-->
+            <section class="footer-1">
+
+                <h3>Subscribe us for latest updates </h3>
+
+                <form>
+                    <input type="email" id="subscribe_email" placeholder="Enter your e-mail....">
+                    <input type="submit" placeholder="Subscribe" class="button-subscribe">
+                </form>
+
+
+            </section>
+
+            <hr>
+
+            <section class="footer-2">
+            
+                <!--Social media Icons-->
+                <section class="social_media">
+                    <p>Stay in touch with us</p>
+
+                    <div class="scoial-media-icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+
+                </section>
+
+                <!--Footer content 1-->
+                <section class="footer_content">
+                    <h3>Categories</h3>
+                    <a href="./vegetable.html">vegetables</a>
+                    <a href="./dairy-products.html">Dairy Products</a>
+                    <a href="./skincare-products.html">Cosmetics & Skincare</a>
+                    <a href="#">Fruits</a>
+                    <a href="#">Meat & Seafood</a>
+                    <a href="#">Baking & cooking Ingrediants</a>
+                </section>
+
+                <!--Footer content 2-->
+                <section class="footer_content">
+                    <h3>Our Locations</h3>
+                    <a href="#">Colombo 03</a>
+                    <a href="#">Kandy</a>
+                    <a href="#">Kurunagala</a>
+                </section>
+
+                <!--Footer content 3-->
+                <section class="contact_us">
+                    <h3>Contact Us</h3>
+                    <p>Phone Number : 081-111-1111</p>
+                    <p>E-mail : grociessupermarket@gmail.com</p>
+                </section>
+
+            </section>
+
+        </section>
+
+        <section class="footer-3">
+            <p>&copy; copyright 2024 Grocies Supermarket Services (Pvt) Ltd. All rights Reserved. </p>
+            <p id="designer">Designed by: Hishma Hameed</p>
+        </section>
+
+    </footer>
+    
+</body>
+</html>
