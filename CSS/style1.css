@@ -7,7 +7,7 @@
     --clr--light : #dae5f9;
     --clr--dark : #303633;
     --clr--black : #000000;
-    --clr--yellow: #ffd43b;
+    --clr--yellow:#fece1f; /*#ffd43b*/
     --clr--back-green : #baf0d5bc;
     --clr--light-gray :#d8d8d8 ;
     --clr--dark-gray : #848484 ;
@@ -20,7 +20,7 @@
     margin: auto;
 }
 
-/*----------------------Header part stylings-------------------------*/
+/*-----------------------------------Header part stylings-----------------------------*/
 
 /*#logo_img{
     margin: 10px;
@@ -330,7 +330,7 @@ nav ul li a:hover,
 }
 
 
-/*--------------------------------------Main part stylings-----------------------------------*/
+/*-----------------------------------------Main part stylings-------------------------------------*/
 
 .more{
     text-decoration: none;
@@ -354,7 +354,7 @@ nav ul li a:hover,
 
 
 
-/*------------Common for all pages boxes in website starts------------------*/
+/*--------------------Common for all pages product boxes in website starts-----------------------*/
 
 h1{
     margin: 20px;
@@ -453,6 +453,48 @@ h1{
 
 }
 
+/*--------------------------Common for Product page and Home page--------------------*/
+
+.products{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+.categories{
+    display: flex;
+    /*flex-direction: row;*/
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+}
+
+.categories div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.categories div img{
+    border-radius: 100%;
+    border: 2px solid var(--clr--blue);
+}
+
+/*ANIMATION*/
+.categories div img:hover{
+    transform: scale(1.05);
+    filter: grayscale(0%);
+}
+
+/*--------------------------Coomon for Home page and About Us page----------------------------------*/
+
 .about_supermarket{
 
     margin-left: 40px;
@@ -466,6 +508,37 @@ h1{
     gap: 30px;
     margin-top: 60px;
     
+}
+
+.supermarket_summery{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 30px;
+    
+}
+
+.supermarket_summery p{
+    margin-bottom: 20px;  /*see more invisble*/
+    text-align:justify;
+    color: var(--clr--dark);
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.supermarket_summery ul{
+    color: var(--clr--dark);
+    font-family: "Poppins",sans-serif;
+    font-weight: 300;
+}
+
+.supermarket_summery a{
+    margin: 50px 30px 50px 10vw;
+
+}
+
+.supermarket_image figcaption{
+    text-align:center;
 }
 
 /*.about_supermarket{
@@ -484,7 +557,7 @@ h1{
 }*/
 
 
-/*--------------------------------Footer part stylings-----------------------*/
+/*------------------------------------------Footer part stylings------------------------------------*/
 
 .back_to_top a{
     text-decoration: none;
@@ -616,7 +689,7 @@ h1{
 
 
 
-/*Mobile responsive*/
+/*------------------------------------Mobile responsive----------------------------------------*/
 
 /*Using media query to add a breakpoint at 800px*/
 
