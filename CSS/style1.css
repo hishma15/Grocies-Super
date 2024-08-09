@@ -617,7 +617,7 @@ h1{
     height: 30px;
     /*border-radius: 20px;&&&&&&&&&&&&&&&&&&&&*/
     border-radius: 0 20px 20px 20px;
-    border: 2;
+    border: 2px;
     margin: 0;   
 }
 
@@ -626,7 +626,7 @@ h1{
     height: 30px;
     /*border-radius: 20px;&&&&&&&&&&&&&&&&&&*/
     border-radius: 0 20px 20px 20px;
-    border:2;
+    border:2px;
     border-color:black ;
     background-color: var(--clr--green);
     color: var(--clr--white);
@@ -733,10 +733,6 @@ h1{
         
         margin: 0;
         padding: 15px 30px 15px 30px;
-    }
-
-    .navbar ul li .active{
-        padding: auto;  
     }
 
     .navbar ul li ul{
