@@ -29,8 +29,20 @@
 }*/
 
 #logo-image{
-    width: 30vw;
+    width: 20vw; /*30vw;*/
     height: auto ;
+}
+
+#before{
+    background-color: var(--clr--back-green);
+    display: block;
+    padding: 5vw 12vw;/*50px 150px ;*/
+}
+
+#after{
+    background-color: var(--clr--back-green);
+    display: block;
+    padding: 5vw 12vw;/*50px 150px ;*/
 }
 
 .header-1{
@@ -329,7 +341,6 @@ nav ul li a:hover,
     display: block;
 }
 
-
 /*-----------------------------------------Main part stylings-------------------------------------*/
 
 .more{
@@ -342,8 +353,7 @@ nav ul li a:hover,
     width: 120px;
     font-size: 15px;
     border: 2px solid var(--clr--blue);
-    text-align: center;
-    
+    text-align: center;   
 }
 
 .more:hover{
@@ -351,10 +361,7 @@ nav ul li a:hover,
     color: var(--clr--white);
 }
 
-
-
-
-/*--------------------Common for all pages product boxes in website starts-----------------------*/
+/*--------------------Common for all pages product boxes in website-----------------------*/
 
 h1{
     margin: 20px;
@@ -611,8 +618,7 @@ h1{
     /*border-radius: 20px;&&&&&&&&&&&&&&&&&&&&*/
     border-radius: 0 20px 20px 20px;
     border: 2;
-    margin: 0;
-    
+    margin: 0;   
 }
 
 .button-subscribe{
@@ -658,8 +664,7 @@ h1{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 3px;
-    
+    gap: 3px;  
 }
 
 .scoial-media-icons i:hover{
@@ -667,8 +672,7 @@ h1{
     color: var(--clr--white);
     padding: 10px;
     /*border-radius: 30px; ^^^^^^^^^^^^^^^^^^^^^^^^^^*/
-    border-radius: 0 20px 20px 20px;
-    
+    border-radius: 0 20px 20px 20px;  
 }
 
 .footer_content{
@@ -685,9 +689,6 @@ h1{
 #designer{
     text-align: end;
 }
-
-
-
 
 /*------------------------------------Mobile responsive----------------------------------------*/
 
@@ -714,7 +715,6 @@ h1{
         display: none;
         border-radius: 0 20px 20px 20px;
         border: 5px solid var(--clr--blue);
-
     }
 
     .navbar .dropdown_products{
@@ -727,26 +727,21 @@ h1{
         flex-direction: column;
         align-items: flex-start;
         padding-left: 20px;
-        
     }
 
     .navbar ul li{
         
         margin: 0;
         padding: 15px 30px 15px 30px;
-
-
     }
 
     .navbar ul li .active{
-        padding: auto;
-        
+        padding: auto;  
     }
 
     .navbar ul li ul{
         position: relative;
-        padding-left: 20px;
-        
+        padding-left: 20px;  
     }
 
     .navbar ul li ul li{
@@ -757,10 +752,9 @@ h1{
     #menu-bar:checked ~ .navbar{
         display: initial;
         background-color: var(--clr--light);
-
     }
 
-    .dropdown_login{
+    .dropdown_login :hover{
         display:none;
     }
 

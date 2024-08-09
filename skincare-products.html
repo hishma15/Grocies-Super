@@ -31,7 +31,6 @@
     <meta name="msapplication-TileImage" content="./mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-
 </head>
 <body>
 
@@ -60,7 +59,7 @@
                 <!--Location selecting option-->
                 <div class="select_location">
                     <i class="fa-solid fa-location-dot"></i>
-                    <select class="location">
+                    <select class="location" name="select-location">
                         <option value="" id="search_locaion">Select your location</option>
                         <option value="colombo">Colombo</option>
                         <option value="kandy">Kandy</option>
@@ -97,9 +96,9 @@
                             <li><a href="./vegetable.html">Vegetables</a></li>
                             <li><a href="./dairy-products.html">Dairy Products</a></li>
                             <li><a href="./skincare-products.html">cosmetics & Skincare Products</a></li>
-                            <li><a href="#">Fruits</a></li>
-                            <li><a href="#">Meat & Seafood</a></li>
-                            <li><a href="#">Baking & cooking Ingrediants</a></li>
+                            <li><a href="./fruits.html">Fruits</a></li>
+                            <li><a href="./meat_seafood.html">Meat & Seafood</a></li>
+                            <li><a href="./baking_cooking_ing.html">Baking & cooking Ingredients</a></li>
                         </ul>
 
                     </li>
@@ -142,7 +141,7 @@
 
                         </form>
                     </li>
-                    <li><a href="./order.html">ORDER</a></li>
+                    <li class="orders"><a href="./order.html"><i class="fa-solid fa-cart-shopping"></i></a><span>0</span></li>
                 </ul>
         
             </nav>
@@ -222,8 +221,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        
+                        <i class="fa-regular fa-star"></i>   
                     </div>
                     <br>
                     <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
@@ -507,7 +505,6 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star"></i>
                         <i class="fa-regular fa-star"></i>
-                        
                     </div>
                     <br>
                     <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
@@ -541,8 +538,6 @@
 
         </table>
 
-
-
     </main>
 
     <!--footer part of the page-->
@@ -565,7 +560,6 @@
                     <input type="email" id="subscribe_email" placeholder="Enter your e-mail....">
                     <input type="submit" placeholder="Subscribe" class="button-subscribe">
                 </form>
-
 
             </section>
 
@@ -591,9 +585,9 @@
                     <a href="./vegetable.html">vegetables</a>
                     <a href="./dairy-products.html">Dairy Products</a>
                     <a href="./skincare-products.html">Cosmetics & Skincare</a>
-                    <a href="#">Fruits</a>
-                    <a href="#">Meat & Seafood</a>
-                    <a href="#">Baking & cooking Ingrediants</a>
+                    <a href="./fruits.html">Fruits</a>
+                    <a href="./meat_seafood.html">Meat & Seafood</a>
+                    <a href="./baking_cooking_ing.html">Baking & cooking Ingrediants</a>
                 </section>
 
                 <section class="footer_content">
@@ -619,6 +613,9 @@
         </section>
 
     </footer>
+
+    <!--Script Links-->
+    <script src="./JAVA SCRIPT/main3.js"></script>
     
 </body>
 </html>

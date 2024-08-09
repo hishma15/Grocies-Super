@@ -24,7 +24,6 @@
     /*height: 18em;*/
     height: auto;
     border-radius: 0 20px 20px 20px;
-    
 }
 
 .service-list{
@@ -40,10 +39,31 @@
     border-radius: 0 20px 20px 20px;
     font-size: 15px;
     box-shadow: 0 3px 3px var(--clr--gray);
-
 }
 
-.service-list div{
+/*.service-list div{
+    background-color: var(--clr--light);
+    padding: 10px;
+    /*border-radius: 40px;&&&&&&&&&&&&&&&&&&&&&&&&&*/
+    /*border-radius: 0 20px 20px 20px;
+    border: 2px solid var(--clr--blue);
+    display: flex;
+    flex-direction: row;
+    gap : 5px;
+
+    /*Animation*/
+    /*box-shadow: 0 3px 3px var(--clr--blue);
+    transition: all 300ms ease-in-out;
+
+    /*Animation copied from https://www.lambdatest.com/blog/css-animations-tutorial/*/
+    /*animation-name: services_animation;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}*/
+
+.service-list li{
     background-color: var(--clr--light);
     padding: 10px;
     /*border-radius: 40px;&&&&&&&&&&&&&&&&&&&&&&&&&*/
@@ -57,17 +77,14 @@
     box-shadow: 0 3px 3px var(--clr--blue);
     transition: all 300ms ease-in-out;
 
-    /*Animation copied from https://www.lambdatest.com/blog/css-animations-tutorial/*/
-    /*animation-name: services_animation;
-    animation-duration: 5s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;*/
-
 }
 
 /*ANIMATION*/
-.service-list div:hover{
+/*.service-list div:hover{
+    box-shadow: 0px 5px 12px ;
+}*/
+
+.service-list li:hover{
     box-shadow: 0px 5px 12px ;
 }
 
@@ -86,7 +103,6 @@ h1{
 .special_off{
     padding: 15px;
     margin-bottom: 30px;
-
 }
 
 .special-offer-products{
@@ -94,8 +110,7 @@ h1{
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
-    
+    justify-content: space-evenly;   
 }
 
 .q_register{
@@ -107,8 +122,6 @@ h1{
     padding: 30px 150px 30px 200px;
     border: 2px solid var(--clr--back-green);
     text-align: right;
-
-
 }
 
 
@@ -127,7 +140,6 @@ h1{
     align-items: flex-end;
     justify-content: center;
     flex-direction: column;
-
 }
 
 .off-price{
@@ -145,7 +157,6 @@ h1{
     /*Animation*/
     box-shadow: 0 3px 3px var(--clr--blue);
     transition: all 300ms ease-in-out;  /*ease-in-out specifies a transition effect with a slow start and end*/
-
 }
 
 
@@ -159,13 +170,11 @@ h1{
     background-color: var(--clr--dark);
     color: var(--clr--white);
     width: max-content;
-    cursor: pointer;
-    
+    cursor: pointer;  
 }
 
 .register-off p{
     margin-bottom: 40px;
-    
 }
 
 .register-off{
@@ -176,8 +185,7 @@ h1{
     padding: 15px 15px 30px 0;
     width: 40%;
     box-shadow: 0 3px 3px var(--clr--blue);
-    transition: all 300ms ease-in-out;
-  
+    transition: all 300ms ease-in-out; 
 }
 
 .register-off:hover{
@@ -192,7 +200,6 @@ h1{
     color: var(--clr--blue);
     margin: auto;
     border-radius: 0 20px 20px 20px;
-
 }
 
 .q_register a:hover{
@@ -226,8 +233,6 @@ h1{
     flex-direction: row;
     align-items:flex-start;
     justify-content: center;
-    
-    
 }
 
 .customer_review .fa-quote-left{
@@ -245,8 +250,7 @@ h1{
 
     /*Animetion*/
     box-shadow: 0px 3px 3px var(--clr--green);
-    transition: all 300ms ease-in-out; 
-    
+    transition: all 300ms ease-in-out;    
 }
 
 .review:hover{
@@ -257,7 +261,6 @@ h1{
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    
 }
 
 .rating .fa-star{
@@ -289,8 +292,6 @@ h1{
     font-size: 15px;
     font-weight: 400;
     padding: 15px;
-
-    
 }
 
 .summary-table th{
@@ -304,7 +305,6 @@ h1{
 .summary-table thead{
     background-color: var(--clr--blue);
     color: var(--clr--light);
-    
 }
 
 
@@ -376,7 +376,6 @@ h1{
 
 /*----------------------------------Mobile Responsive--------------------------------*/
 
-
 /*Using media query to add a breakpoint at 950px*/
 @media (max-width:950px){
 
@@ -384,7 +383,6 @@ h1{
         padding-left: 20px;
         padding-right: 20px;
         background-size:cover;
-        
     }
 
     .buy-save-off{
@@ -396,7 +394,6 @@ h1{
         justify-content: center;
         align-items: center;
         margin-left: 0;
-
     }
 
     .off-price{
@@ -414,7 +411,6 @@ h1{
         margin-left: 10px;
     }
 
-
 }
 
 /*Using media query to add a breakpoint at 450px*/
@@ -423,12 +419,10 @@ h1{
 
     .summary-table{
         width: 300px;
-        
     }
 
     .summary-table thead tr{
         display: none;
-
     }
 
     .summary-table tbody tr{

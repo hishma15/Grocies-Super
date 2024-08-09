@@ -28,29 +28,23 @@
     /*-------------------------------------------------------------------------------*/
     gap: 40px;
     margin: 25px;
-    
 }
 
 .provider-intro{
     margin: 25px;
 }
 
-
-
 .provider-logo{
     width: 300px;
-    margin-bottom: 30px;
-    
+    margin-bottom: 30px;  
 }
 
 .veg-providers{
     margin-top: 40px;
-
 }
 
 .veg-providers h2{
     margin-left: 20px;
-
 }
 
 .provider{
@@ -62,8 +56,7 @@
     align-items: center;
     gap: 30px;
     text-align: justify;
-    font-size: 16px;
-    
+    font-size: 16px; 
 }
 
 .details{
@@ -78,14 +71,12 @@
 
 .details a:link{
     color: var(--clr--blue);
-
 }
 
 .details a:visited{
     color: var(--clr--green);
 }
 /*--------------------------------------------------------------*/
-
 
 
 /*-----------------------------------DAIRY PRODUCTS PAGE STYLING-----------------------------------*/
@@ -103,7 +94,6 @@
     justify-content: space-evenly;
 }
 
-
 /*-------------------------------------COSMETICS & SKIN CARE PRODUCTS PAGE STYLING-------------------------------*/
 
 .cosmetics_skincare-products{
@@ -115,9 +105,6 @@
     margin: 20px;
 }
 
-
-
-
 /*---------------------------------Common for Vegetable page and Diary product pages------------------------------------*/
 
 .product-description{
@@ -127,7 +114,16 @@
     text-align: justify;
     font-family: "Poppins",sans-serif;
     font-weight: 400;
+}
 
+/*-------------------All other products (Fruits, Baking & Cooking ingredients and Meat & Seafood)------------------*/
+
+.all_other_products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 /*---------------------------------Mobile Responsive---------------------------------------*/
@@ -144,7 +140,6 @@
     .product-description{
         display: flex;
         flex-wrap: wrap;
-
     }
 
     #dairy-img{
@@ -161,7 +156,6 @@
         
     }
 
-   
 }
 
 

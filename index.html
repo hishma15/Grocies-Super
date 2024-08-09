@@ -59,7 +59,7 @@
                 <!--Location selecting option-->
                 <div class="select_location">
                     <i class="fa-solid fa-location-dot"></i>
-                    <select class="location">
+                    <select class="location" name="select-location">
                         <option value="" id="search_locaion">Select your location</option>
                         <option value="colombo">Colombo</option>
                         <option value="kandy">Kandy</option>
@@ -96,15 +96,15 @@
                             <li><a href="./vegetable.html">Vegetables</a></li>
                             <li><a href="./dairy-products.html">Dairy Products</a></li>
                             <li><a href="./skincare-products.html">cosmetics & Skincare Products</a></li>
-                            <li><a href="#">Fruits</a></li>
-                            <li><a href="#">Meat & Seafood</a></li>
-                            <li><a href="#">Baking & cooking Ingrediants</a></li>
+                            <li><a href="./fruits.html">Fruits</a></li>
+                            <li><a href="./meat_seafood.html">Meat & Seafood</a></li>
+                            <li><a href="./baking_cooking_ing.html">Baking & cooking Ingredients</a></li>
                         </ul>
 
                     </li>
                     <!--Sign in option as dropdown-->
                     <li class="dropdown">
-                        <a href="./register.html">REGISTER/LOGIN</a>
+                        <a href="./register.html"><i class="fa-solid fa-user-large"></i> REGISTER/LOGIN</a>
                         <form class="dropdown_login">
 
                             <div class="head"> 
@@ -141,7 +141,7 @@
 
                         </form>
                     </li>
-                    <li><a href="./order.html">ORDER</a></li>
+                    <li class="orders"><a href="./order.html"><i class="fa-solid fa-cart-shopping"></i></a><span>0</span></li>
                 </ul>
         
             </nav>
@@ -160,14 +160,20 @@
             <img src="./IMAGE/banner.jpg" alt="main-image" id="main-image">
         </section>
 
-        <!--About our sevices in a ordered list -->
+        <!--About our sevices in an unordered list -->
         <section class="service_list">
 
             <ul class="service-list">
+                <li><i class="fa-solid fa-clock"></i> 24 Hours Services</li>
+                <li><i class="fa-solid fa-paper-plane"></i> Door step Delivery</li>
+                <li><i class="fa-solid fa-award"></i> High-quality products</li>
+                <li><i class="fa-solid fa-check"></i> Fresh & Organic</li>
+                <li><i class="fa-solid fa-hand-holding-dollar"></i> Affordable price</li>
 
-                <div id="24_hour">
-                    <i class="fa-solid fa-clock"></i>
-                    <li>24 Hours Services</li>
+
+                <!--<div id="24_hour">
+                    <i class="fa-solid fa-clock"></i> 
+                    <li><i class="fa-solid fa-clock"></i> 24 Hours Services</li>
                 </div>
 
                 <div id="door_delivery">
@@ -188,7 +194,7 @@
                 <div id="affordable_price">
                     <i class="fa-solid fa-hand-holding-dollar"></i>
                     <li>Affordable price</li>
-                </div>
+                </div>-->
 
             </ul>
 
@@ -211,7 +217,7 @@
                 </div>
                 <div class="skincare_products">
                     <!--Image got from https://www.freepik.com/-->
-                    <a href="./skincare-products.html"><img src="./IMAGE/skin-care-products.jpg"></a>
+                    <a href="./skincare-products.html"><img src="./IMAGE/skin-care-products.jpg" alt="skin-care products"></a>
                     <span>COSMETICS AND SKIN CARE PRODUCTS</span>
                 </div>
                 <div class="see-more">
@@ -239,8 +245,8 @@
 
                         <img src="./IMAGE/carrot.jpg" alt="Carrot">
                         <h3>Fresh Carrots</h3>
-                        <span>1Kg</span>
-                        <div class="price">Rs.279.00<del>Rs.310.00</del></div>
+                        <span>100g</span>
+                        <div class="price">Rs.27.90<del>Rs.31.00</del></div>
                         <div class="stars">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -249,7 +255,7 @@
                             <i class="fa-solid fa-star-half"></i>
                         </div>
                         <br>
-                        <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Buy now</a>
+                        <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
 
                     </div>
 
@@ -263,16 +269,14 @@
 
                         <img src="./IMAGE/onion.jpg" alt="Onion">
                         <h3>Fresh Onion</h3>
-                        <span>1Kg</span>
-                        <div class="price">Rs.637.50<del>Rs.750.00</del></div>
+                        <span>100g</span>
+                        <div class="price">Rs.63.75<del>Rs.75.00</del></div>
                         <div class="stars">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-
-                            
+                            <i class="fa-regular fa-star"></i>    
                         </div>
                         <br>
                         <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
@@ -321,7 +325,6 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-regular fa-star"></i>
-
                         </div>
                         <br>
                         <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
@@ -394,7 +397,6 @@
                 <!--The paragraph is copied from the https://www.carrefourqatar.com/mafqat/en/ website.-->
                 <p>At Grocies Supermarket we are provide wide range of products that cater to your needs , available all our supermarket store chains across Sri Lanka.</p>
 
-
                 <!--Bullet List-->
                 <p>whether you're looking for,</p>
                 <ul>
@@ -408,8 +410,6 @@
                 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Grocies supermarket has something for you all. Elevate your grocery shopping experience with us today.</p>
                 
                 <a href="aboutus.html" class="more">READ MORE <i class="fa-solid fa-angle-right"></i></a>
-
-
             </div>
             
             <figure class="supermarket_image">
@@ -528,9 +528,8 @@
 
                 <form>
                     <input type="email" id="subscribe_email" placeholder="Enter your e-mail....">
-                    <input type="submit" placeholder="Subscribe" class="button-subscribe">
+                    <input type="submit" class="button-subscribe">
                 </form>
-
 
             </section>
 
@@ -557,9 +556,9 @@
                     <a href="./vegetable.html">vegetables</a>
                     <a href="./dairy-products.html">Dairy Products</a>
                     <a href="./skincare-products.html">Cosmetics & Skincare</a>
-                    <a href="#">Fruits</a>
-                    <a href="#">Meat & Seafood</a>
-                    <a href="#">Baking & cooking Ingrediants</a>
+                    <a href="./fruits.html">Fruits</a>
+                    <a href="./meat_seafood.html">Meat & Seafood</a>
+                    <a href="./baking_cooking_ing.html">Baking & cooking Ingrediants</a>
                 </section>
 
                 <!--Footer content 2-->
@@ -587,6 +586,9 @@
         </section>
 
     </footer>
-    
+
+    <!--Script Links-->
+    <script src="./JAVA SCRIPT/main3.js"></script>
+
 </body>
 </html>

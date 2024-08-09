@@ -59,7 +59,7 @@
                 <!--Location selecting option-->
                 <div class="select_location">
                     <i class="fa-solid fa-location-dot"></i>
-                    <select class="location">
+                    <select class="location" name="select-location">
                         <option value="" id="search_locaion">Select your location</option>
                         <option value="colombo">Colombo</option>
                         <option value="kandy">Kandy</option>
@@ -96,9 +96,9 @@
                             <li><a href="./vegetable.html">Vegetables</a></li>
                             <li><a href="./dairy-products.html">Dairy Products</a></li>
                             <li><a href="./skincare-products.html">cosmetics & Skincare Products</a></li>
-                            <li><a href="#">Fruits</a></li>
-                            <li><a href="#">Meat & Seafood</a></li>
-                            <li><a href="#">Baking & cooking Ingrediants</a></li>
+                            <li><a href="./fruits.html">Fruits</a></li>
+                            <li><a href="./meat_seafood.html">Meat & Seafood</a></li>
+                            <li><a href="./baking_cooking_ing.html">Baking & cooking Ingredients</a></li>
                         </ul>
 
                     </li>
@@ -141,7 +141,7 @@
 
                         </form>
                     </li>
-                    <li><a href="./order.html" class="active">ORDER</a></li>
+                    <li class="orders"><a href="./order.html"><i class="fa-solid fa-cart-shopping"></i></a><span>0</span></li>
                 </ul>
         
             </nav>
@@ -152,6 +152,33 @@
 
     <!--Main part of the page-->
     <main>
+
+        <!--Products-->
+        <h2>Pick your products...</h2>
+        <section class="section-head">
+            <section class="product-section">
+                <!--<div class="odd">
+                    <img src="./IMAGE/carrot.jpg" alt="Carrots"><span>Fresh Carrots</span><p>Rs.279.00/1kg</p>
+                    <button class="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                <div>-->
+
+            </section>
+            
+        </section>
+
+        <div id="quantity-message">
+            <span>NOTE: </span>
+            <span>Vegetables, Fruits, Meat & Seafood amount added as Kgs. Dairy products, Baking & Cooking ingredients, Cosmetics & Skincare products amount is shown as quantity.</span>
+        </div>
+
+        <!--Two buttons to save an order as a favourite-->
+        <section id="fav-buttons">
+            <button type="button" class="fav_buttons" id="add-fav">Add to favourites <i class="fa-regular fa-star"></i></button>
+            <button type="button" class="fav_buttons" id="apply-fav">Apply favourites <i class="fa-solid fa-star"></i></button>
+        </section>
+
+        <br>
+        <br>
 
         <h1>Place your order here...</h1>
 
@@ -167,42 +194,21 @@
                     <th>TOTAL</th>
                     <th>ACTION</th>
                 </thead>
-                <tbody>
-                    <tr>
+                <tbody class="cart-products">
+                    <!--<tr>
                         <td class="product-name"><img src="./IMAGE/tomato.jpg" alt="Tomatoes"><span>Fresh Tomatoes</span></td>
                         <td>Rs.480.00<span>/1kg</span></td>
-                        <td><input type="number" value="1"></td>
+                        <td><input type="number" value="1" min="1"></td>
                         <td>Rs.480.00</td>
                         <td class="action"><button class="cart"><i class="fa-solid fa-cart-shopping"></i></button><button class="cancel"><i class="fa-solid fa-xmark"></i></button></td>
-                    </tr>
-                    <tr>
-                        <td class="product-name"><img src="./IMAGE/eggs.jpg" alt="Eggs"><span>Farm Fresh Eggs</span></td>
-                        <td>Rs.650.00<span>/10</span></td>
-                        <td><input type="number" value="1"></td>
-                        <td>Rs.650.00</td>
-                        <td class="action"><button class="cart"><i class="fa-solid fa-cart-shopping"></i></button><button class="cancel"><i class="fa-solid fa-xmark"></i></button></td>
-                    </tr>
-                    <tr>
-                        <td class="product-name"><img src="./IMAGE/himalyaa-facewash.jpg" alt="Facewash"><span>Himalaya Facewash</span></td>
-                        <td>Rs.1190.00<span>/100ml</span></td>
-                        <td><input type="number" value="1"></td>
-                        <td>Rs.1190.00</td>
-                        <td class="action"><button class="cart"><i class="fa-solid fa-cart-shopping"></i></button><button class="cancel"><i class="fa-solid fa-xmark"></i></button></td>
-                    </tr>
+                    </tr>-->
                 </tbody>
                 
                 <tfoot>
-                    <tr>
-                        <td colspan="3">SUB TOTAL : </td>
-                        <td>Rs.2320.00</td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">DELIVERY CHARGE : </td>
-                        <td>RS.200.00</td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">TOTAL : </td>
-                        <td>Rs.2520.00</td>
+                    <tr class="subtotal">
+                        <!--<td colspan="3">SUB TOTAL : </td>
+                        <td></td>
+                        <td></td>-->
                     </tr>
                 </tfoot>
             </table>
@@ -218,94 +224,26 @@
             
         </section>
 
-        <!--User input Description-->
-        <section class="user-input_des">
+        <section class="last-cont">
 
-            <label>Write a message regarding your order requirement : </label>
+            <!--User input Description-->
+            <section class="user-input_des">
 
-            <textarea></textarea>
+                <label>Write a message regarding your order requirement : </label>
 
-           <!-- <form>
-                <input type="textarea" class="description" placeholder="Write a message.....">
-            </form>-->
+                <textarea></textarea>
 
-        </section>
+            <!-- <form>
+                    <input type="textarea" class="description" placeholder="Write a message.....">
+                </form>-->
 
-        <br>
+            </section>
 
-        <!--Checkout section-->
-        <section class="pre-checkout">
-            
-            <!--Payment Method Selection-->
-            <form>
-                
-                <br>
+            <section class="new_page">
+                    <!--<input type="submit" value="CHECK-OUT" class="final-checkout">-->
+                <button class="final-checkout buy_now" id="buy_now">BUY NOW</button>
+            </section>
 
-                <div class="payment-method">
-                    <label>Select your payment method: </label>
-                    <br>
-                    <input type="radio" name="payment" id="debit"><label for="debit">Debit Card</label>
-                    <br>
-                    <input type="radio" name="payment" id="credit"><label for="credit">Credit Card</label>
-                    <br>
-                    <input type="radio" name="payment" id="cash"><label for="cash">Cash on Delivery</label>       
-                    
-                
-                </div>
-
-                <br>
-
-                <section class="delivery-info">
-                
-                    <div>
-                        <label>Enter your delivery Address: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                        <input type="text" placeholder="Delivery Address" required>
-                    </div>
-                    <br>
-                    <div>
-                        <label>Enter your phone number: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                        <input type="text" placeholder="Phone Number" required>
-                    </div>
-                    <br>
-                    <div>
-                        <label>Enter your Loyalty card Number: </label>
-                        <input type="text" placeholder="Loyalty card Number">
-                    </div>
-                    <br>
-                    <div>
-                        <input type="submit" value="submit" class="deliver-btn submit">
-                        <input type="reset" value="Reset" class="deliver-btn reset">
-                    </div>
-            
-                </section>
-
-            </form>
-
-        </section>
-
-        <section class="checkout">
-            <div class="rate_us">
-                <h2>Rate Us</h2>
-                <br>
-                <!--<i class="fa-regular fa-face-frown"></i>
-                <i class="fa-regular fa-face-frown-open"></i>
-                <i class="fa-regular fa-face-meh"></i>
-                <i class="fa-regular fa-face-smile"></i>
-                <i class="fa-regular fa-face-laugh-beam"></i>-->
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-
-                <section class="user-input_des">
-                    <label>Write your feedback: </label>
-                    <textarea></textarea>
-                </section>
-            </div>
-            <form>
-                <input type="submit" value="CHECK-OUT" class="final-checkout">
-            </form>
         </section>
 
     </main>
@@ -356,9 +294,9 @@
                     <a href="./vegetable.html">vegetables</a>
                     <a href="./dairy-products.html">Dairy Products</a>
                     <a href="./skincare-products.html">Cosmetics & Skincare</a>
-                    <a href="#">Fruits</a>
-                    <a href="#">Meat & Seafood</a>
-                    <a href="#">Baking & cooking Ingrediants</a>
+                    <a href="./fruits.html">Fruits</a>
+                    <a href="./meat_seafood.html">Meat & Seafood</a>
+                    <a href="./baking_cooking_ing.html">Baking & cooking Ingrediants</a>
                 </section>
 
                 <section class="footer_content">
@@ -384,6 +322,9 @@
         </section>
 
     </footer>
+
+    <script src="./JAVA SCRIPT/products.js"></script>
+    <script src="./JAVA SCRIPT/main1.js"></script>
 
 </body>
 </html>
